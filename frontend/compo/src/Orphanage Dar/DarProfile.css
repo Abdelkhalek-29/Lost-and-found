@@ -1,0 +1,328 @@
+.cardProfile122{
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 1200px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1px solid;
+    margin-left: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: sticky;
+    margin-left: 130px;
+    filter: drop-shadow(0 0 0.4rem gray); 
+    margin-bottom: 450px;
+  }
+ 
+  .card__imgProfile {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .card__imgProfile .Cover{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0px ;
+  }
+  
+
+
+.card__avatarProfile {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 230px;
+    left: 20px; /* Adjust the left position to move it to the left side */
+  }
+  
+  .card__avatarProfile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+  }
+  
+  
+  .card__titleProfile {
+    position: absolute;
+    font-weight: 500;
+    font-size: 23px;
+    color: var(--main-color);
+    top: 300px;
+    left: 190px;
+  }
+  
+  .card__subtitleProfile {
+    position: absolute;
+    top: 340px;
+    left: 190px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--submain-color);
+  }
+  
+  .card__btnProfile {
+    position: absolute;
+    top: 310px;
+    left: 990px;
+    margin-top: 8px;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(71,144,240);;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .card__btnProfile:hover
+  {
+    color: white;
+    background-color: black;
+  }
+
+  .card__btn-solid {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .card__btn-solid:hover {
+    background: var(--bg-color);
+    color: var(--main-color);
+  }
+  
+
+
+   .aboutProfile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Item,
+  .Itemb {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .Item svg,
+  .Itemb svg {
+    margin-right: 8px;
+  }
+
+.Item
+{
+    position: absolute;
+    top: 420px;
+    left: 20px;
+}
+
+.Itemb {
+    position: absolute;
+    top: 460px;
+    left: 20px;
+  }
+  
+  .Item span,
+  .Itemb span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .card__btnProfile svg
+  {
+    margin-right:8px;
+  }
+  .PostUser
+  {
+    margin-top: 250px;
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+    margin-top: 300px;
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333; 
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+/* 
+.edit-profile-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  max-width: 400px; 
+}
+
+.edit-profile-dialog.open {
+  display: block;
+}
+
+.edit-profile-dialog button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-profile-dialog button:hover {
+  background-color: #0056b3;
+}
+ */
+
+ .card__avatarProfile img:hover {
+  transform: scale(1.1); 
+  filter: grayscale(100%); 
+}
+
+.card__imgProfile .Cover:hover {
+  transform: scale(0.999);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  filter: grayscale(100%); 
+}
+
+
+/*Dark*/
+
+.dark .cardProfile122
+{
+  background-color: rgb(28, 30, 33)
+  ;
+}
+
+.dark .card__titleProfile
+{
+  color: white;
+  margin-top: 12px;
+}
+
+
+.dark .card__subtitleProfile {
+  background-color: #1C1E21;
+}
+
+
+.dark .card__btnProfile
+{
+  background-color: 	#e4e6eb;
+}
+
+#b0b3b8
+
+.dark .card__btnProfile:hover
+{
+  background-color:#b0b3b8
+  ;
+}
+
+.dark .Item svg,
+.dark .Itemb svg {
+  color: #fff; 
+}
+.dark .aboutProfile {
+  color: #fff; 
+}
+
+.dark .cardProfile {
+  border: 2px solid wheat !important;
+}
+
+.dark body {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color for better contrast */
+}
+
+
+.Dead
+{
+  border: 1.5px solid wheat;
+  border-radius: 5px;
+  width: 40px;
+  padding: 1px 3px;
+  background-color: red;
+  color: white;
+  position: relative;
+  top: -70px;
+  left: 210px;
+  margin-bottom: -55px;
+  font-weight: 500;
+  animation: pulse 2s ease-in-out infinite; /* Adding the animation */
+}
+.Connect
+{
+  border: 1.5px solid wheat;
+  border-radius: 5px;
+  width: 60px;
+  padding: 1px 3px;
+  background-color: rgb(83, 83, 228);
+  color: white;
+  position: relative;
+  top: -70px;
+  left: 210px;
+  margin-bottom: -55px;
+  font-weight: 500;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Keyframes for the pulse animation */
+@keyframes pulse {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.1);
+}
+100% {
+  transform: scale(1);
+}
+}

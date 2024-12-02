@@ -1,0 +1,100 @@
+.Otp-form {
+    display: flex;
+    flex-direction: column;
+    margin: 9px 0;
+  }
+  .Otp-form input[type="text"] {
+    background-color: #e6e3e3dc;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+  }
+
+  .Otp-form input[type="text"]::placeholder /* font of placholder */
+ { 
+   font-family: Arial, Helvetica, sans-serif; 
+   font-size: 15px;
+   font-weight: 300;
+}
+.container-Otp
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    margin-top: 220px;
+    padding: 20px;
+    border: 1px solid #845252;
+    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 380px;
+    max-width: 100%;
+    min-height: 250px;
+    margin-bottom: 250px;
+}
+
+
+.Otp-form button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px; 
+    margin: auto; 
+    margin-top: 20px;
+    margin-bottom: 5px;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #4b6b69;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Otp-form button:hover {
+    background-color: #5fc839;
+  }
+
+.container-Otp h1
+{
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+
+.container-Otp p
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red; 
+  font-size: 14px; 
+  margin-top: 5px; 
+}
+
+
+.Otp-form button[type="submit"] {
+    width: 90px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }

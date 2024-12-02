@@ -1,0 +1,84 @@
+@import url('https://fonts.cdnfonts.com/css/archia');
+
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+
+  }
+  
+ /*  .Featurecard1,
+  .Featurecard2,
+  .Featurecard3,
+  .Featurecard4 {
+    width: 310px; 
+    border-radius: 20px;
+    margin: 16px;
+    text-align: center;
+    height: 180px;
+
+  }
+  */
+  .featurecardimg
+{
+    border-radius: 20px;
+}
+  
+  
+  .featurecontainer {
+    color: black;
+    font-family: "Archia", sans-serif;
+    height: 120px;
+    text-align: start;
+    margin-left: 10px;
+    margin-top: -25px;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+
+.Featurecard1:hover  .featurecontainer h4,
+.Featurecard2:hover  .featurecontainer h4,
+.Featurecard3:hover  .featurecontainer h4,
+.Featurecard4:hover  .featurecontainer h4
+  {
+    color: #A7CE93;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+  }
+  .ContainerCardFeature {
+    height:70vh;
+  }
+
+
+  .Featurecard1
+  {
+    border-radius: 20px;
+    margin: 16px;
+    text-align: center;
+    width: 280px;
+  }
+
+  .Featurecard2
+  {
+    width: 310px;
+    border-radius: 20px;
+    margin: 16px;
+    text-align: center;
+
+  }
+  .Featurecard3 {
+    width: 350px; 
+    border-radius: 20px;
+    margin: 16px;
+    text-align: center;
+
+  }
+  .Featurecard4 {
+    width: 280px; 
+    border-radius: 20px;
+    margin: 16px;
+    text-align: center;
+  }

@@ -1,0 +1,333 @@
+/* .dialogEditProfilePage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog-contentEditProfilePage {
+    background-color: white;
+    padding: 15px;
+    border-radius:8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   overflow: auto;
+}
+
+.dialog-contentEditProfilePage h2 {
+    margin-top: 0;
+}
+
+.dialog-contentEditProfilePage form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dialog-contentEditProfilePage label {
+    margin-bottom: 5px;
+}
+
+.dialog-contentEditProfilePage  {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 1000px;
+    height: 600px;
+}
+
+.dialog-contentEditProfilePage button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+
+.card__imgProfileEdit {
+    height: 200px;
+    width: 100%;
+}
+
+.card__imgProfileEdit .CoverEdit{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0px ;
+}
+
+.card__avatarProfileEdit {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 168px;
+    left: 278px; 
+}
+
+.card__avatarProfileEdit img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    background-color: red;
+}
+.avatarImageWrapper {
+    width: 135px; 
+    height: 135px;
+    border-radius: 100%; 
+    overflow: hidden; 
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 200px;
+    padding:0px;
+    margin-right: 50px;
+  } */
+  
+.edit-profile-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .edit-profile-dialog.open {
+    display: block;
+  }
+  
+  .edit-profile-dialog button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .edit-profile-dialog button:hover {
+    background-color: red;
+    color: white;
+  }
+  
+ 
+  
+  
+.card__imgProfileEdit {
+    height: 200px;
+    width: 100%;
+}
+
+.card__imgProfileEdit .CoverEdit{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0px ;
+}
+
+
+
+.card__avatarProfileEdit {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 168px;
+    left:60px; 
+}
+
+.card__avatarProfileEdit img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+}
+
+.avatarImageWrapper {
+    width: 135px; 
+    height: 135px;
+    border-radius: 100%; 
+    overflow: hidden; 
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.dialog-contentEditProfilePage form {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-contentEditProfilePage label {
+    margin-bottom: 5px;
+}
+
+
+/* .dialog-contentEditProfilePage button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+} */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 999;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .form-group1 {
+    margin-bottom: 10px;
+  }
+  
+  .form-group1 label {
+    display: block;
+  }
+  
+ .form-group1 input
+  /* .form-group1 select */ {
+    width: 200px;
+    padding:0 5px;
+    margin-right: 50px;
+  }   
+  .selectDialoge
+  {
+    width: 200px;
+    height: 30px;
+    padding:0 3px;
+    margin-right: 50px;
+  }
+
+  .BtnCloseDialoge
+  {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    top: 35px;
+    left: 775px;
+    width: 20px;
+    text-align: center;
+    height: 30px;
+    justify-content: center;
+    color: black;
+
+  }
+
+  .edit-profile-dialog .BtnSubmitDialoge
+  {
+    position: absolute;
+    top:570px;
+    left: 680px;
+    width: 130px;
+    border: 1px solid white;
+    background-color: #358AF2;
+    height: auto;
+    font-size: 12px;  
+    font-weight: 600; 
+    color: white;
+
+  }
+
+  .edit-profile-dialog .BtnSubmitDialoge:hover
+  {
+   background: #35F26C; 
+   border: white;
+  }
+
+ /*  .card__imgProfileEdit img:hover {
+    transform: scale(1.1); 
+  } */
+
+  .card__imgProfileEdit img {
+    transition: filter 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
+  
+  .card__imgProfileEdit img:hover,
+  .card__imgProfileEdit img:active {
+    filter: grayscale(100%);   
+}
+
+.card__avatarProfileEdit img {
+    transition: filter 0.3s ease-in-out; 
+  }
+  
+  .card__avatarProfileEdit img:hover,
+  .card__avatarProfileEdit img:active {
+    filter: grayscale(100%);   
+  }

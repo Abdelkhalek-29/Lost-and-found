@@ -1,0 +1,55 @@
+@import url('https://fonts.cdnfonts.com/css/archia');
+
+/* .FeatureSection
+{
+  background-color: rgb(251,249,248);
+width: 100%;
+} */
+.FeatureSection-content
+{
+    text-align: center;
+
+}
+.FeatureSection-content h2 {
+    color: rgb(30, 30, 47);
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 700;
+    font-family: "Archia", sans-serif;
+    opacity: 0; /* Hidden before the animation starts */
+    transform: translateY(100px); /* Initial position: further down */
+    transition: opacity 3s ease, transform 2s ease; /* Smooth transition with 5s duration */
+  }
+  
+  .FeatureSection-content.active h2 {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Final position */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+.dot
+{
+  font-family: Varela, sans-serif;
+  color: #97c680;
+  font-size: 50px;
+}
+
+/* @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+   */

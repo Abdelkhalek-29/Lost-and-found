@@ -1,0 +1,243 @@
+.card-Notifcation
+{  
+   position: absolute;
+    top: 50px;
+    right: 5.5rem;
+    width: 360px;
+    height: 460px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 0.1px solid  #9e9ea7; 
+    box-shadow: #686B7A;
+    overflow: hidden;  
+}
+
+/*  .list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left:0.5rem;
+    right: 30rem;
+    gap: 10px;
+} */
+
+.card-header
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1.8px solid ;
+border-color: #9e9ea7;
+padding: 0px 10px;
+margin-top: 1px;
+width: 340px;
+height: 50px;
+
+}
+.clear-notifiacton
+{
+text-decoration: none;
+color: rgb(71,144,240);
+font-size: 14px;
+
+}
+
+.card-Notifcation span
+{   font-size: 14px;
+width: 50px;
+height:25px;
+font-weight: 500;
+border-radius: 10px;
+background-color: rgba(214, 41, 62, 0.1);
+color: #D7293E;
+margin-right: 100px;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+.card-Notifcation h6
+{
+font-size: 15px;
+}
+
+/* .bodylist
+{
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    overflow-y: scroll;
+    overflow-x: auto ;
+    scrollbar-width: thin;
+}
+
+.list
+{
+  padding-left: 10px;
+  padding-top: 2px;
+   margin-top: 0;  
+}
+.list-item{
+    margin-bottom: 15px;
+    background-color: #e1e4e6;
+    padding: 10px;
+    
+} */
+/* .bodylist {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll; 
+    max-height: 100%;
+    scrollbar-width: thin;
+} */
+.bodylist {
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+
+.bodylist::-webkit-scrollbar {
+    width: 10px; 
+}
+
+
+.bodylist::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+
+.bodylist::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+}
+
+
+.bodylist::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+.list {
+    padding-left: 10px;
+    padding-top: 2px;
+    margin-top: 0;
+    width: 100%; 
+}
+
+.list-item {
+    margin-bottom: 15px;
+    background-color: #e1e4e6;
+    padding: 10px;
+    width: 310px; 
+}
+
+
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 80px;
+    text-align: start;
+    padding-left: 22px;
+}
+.notificationContent
+{
+    font-size: 0.875em;
+    font-weight: 400;   
+    
+}
+.notificationContent b
+{
+    color: #9e9ea7;
+}
+.notificationTime
+{  
+    font-size: 12px;
+    width: 140px;
+    height: auto;
+    position: relative;
+    left: 59px; 
+    color: #9e9ea7;
+    white-space: nowrap;
+    margin-top:0;
+    margin-bottom: 15px;
+    left: 15px;
+}
+
+
+.Avatar
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width:350px;
+}
+
+.Button
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 73px;
+}
+
+.btnA
+{    
+  border: none;
+  border-radius: 3px;
+  color: floralwhite;
+  width: 60px;
+  height: 30px;
+  background-color: #0f6fec;
+}
+
+.btnD
+{
+  position: relative;
+  left: 10px;
+  border-radius: 3px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  background-color: rgba(214, 41, 62, 0.1);
+color: #D7293E;
+}
+
+.bodylist:hover b 
+{
+    color: #000;
+    
+}
+
+
+.list > li:nth-child(1) {
+    margin-top: 10000000px;
+    gap: 100px;
+    
+  }
+  .dark .bodylist b
+  {
+    color: wheat;
+  }
+
+ 

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/79b5a1ab-cde9-46d5-aaf1-9a7e55a5cccc/resourceGroups/backend_group/providers/Microsoft.Web/sites/findmeapp",
+    "appService.deploySubpath": "."
+}

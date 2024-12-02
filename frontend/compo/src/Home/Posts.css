@@ -1,0 +1,372 @@
+.PostBox {
+    margin-left: 400px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 270px;
+    width: 650px;
+    height: auto;
+    margin-top: -210px;
+    position: relative;
+}
+
+  
+  /* .PostBox { ////that apper the two post 
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 650px;
+    max-width: 100%; /* Ensure the posts don't overflow the container 
+  }
+ */
+
+ 
+  .PostHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .UserInfo { 
+    margin-left: 10px;
+  }
+  
+ 
+  .UserName {
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 10px;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  
+  .PostTime {
+    padding: 0px;
+    font-size: 12px;
+    color: #666;
+    
+
+  }
+  
+  /* PostContent styles */
+  .PostContent {
+    margin-bottom: 10px;
+  }
+  
+  
+  .PostText {
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+    text-align: start;
+    margin-top: -7px;
+    margin-left: 10px;
+  }
+  
+
+  .PostActions {
+    display: flex;
+    gap: 35px;
+    max-width: 700px; 
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+
+  }
+  
+  .ActionButton {
+    background-color: transparent;
+    color: #666;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: -15px;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 40px; 
+    background-color: #878282; 
+    margin: 0 10px; 
+  }
+  .ActionButton:hover {
+    background-color: #3232ff;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .ActionButton .faceai {
+    margin-right: 8px;
+    width: 40px;
+    height: 40px; 
+  }
+  
+  .pofbtn {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  
+  .postImg
+  {
+    height: 450px;
+    width: 600px;
+    border-radius: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+  .Divider {
+    margin: 10px 0; 
+    margin-top: 35px;
+    border: 0;
+    border-top: 1px solid #ccc; 
+  }
+  
+
+
+  .menu__icon {
+    width: 32px;
+    height: 18px;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform 0.4s;
+    margin-left:340px ;
+    margin-bottom: 20px;
+    border: none; 
+    background-color: transparent;
+  }
+
+  .menu__icon span {
+    width: 16%;
+    height: 0.25rem;
+    border-radius: 0.125rem;
+    background-color: rgb(61, 64, 68);
+    box-shadow: 0 0.5px 2px 0 hsla(0, 0%, 0%, 0.2);
+    transition: width 0.4s, transform 0.4s, background-color 0.4s;
+  }
+  
+  .menu__icon:hover span {
+    width: 0.25rem;
+    transform: translateX(10px);
+    background-color: rgb(255, 59, 48);
+  }
+
+  /* Menu styles */
+  .Menu {
+    position: absolute;
+    top: 50px;
+    right: 3.5rem;
+    width: 150px;
+    height: 185px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 0.1px solid  #9e9ea7; 
+    box-shadow: #686B7A;
+    overflow: hidden; 
+    z-index: 100;
+  }
+  
+  .Menu.active {
+    visibility: visible; /* Show the menu when active */
+  }
+  
+  .Menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .Menu li {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #1c1e21;
+  }
+  
+/*   .Menu li:hover {
+    background-color: #f0f2f5;
+  } 
+  
+  */
+  
+  .Menu li:last-child {
+    border-top: 1px solid #dddfe2;
+  }
+   
+  .Menu li:last-child:hover {
+    border-bottom-color: transparent;
+  }
+  
+  .Menu li .icon {
+    margin-right: 8px;
+  }
+  
+  .Menu li .label {
+    display: inline-block;
+  }
+  
+  .Menu svg {
+    vertical-align: middle; 
+    margin-right: 6px; 
+    margin-bottom: 2px;
+    
+  }
+
+  .Menu ul li:hover svg path {
+    fill: #4790F0; }
+  .Menu  li:hover
+  {
+    color: #4790F0;
+  }
+
+  .ActionButton
+  {
+    font-size: 15px;
+    font-weight: 550;
+
+  }
+  
+   .PostActions svg {
+    vertical-align: middle; 
+    margin-right: 6px; 
+    margin-bottom: 2px;
+  } 
+
+  .bi-reply-fill {
+    transform: scaleX(-1);
+  }
+
+  .ActionButton:hover svg path
+  {
+    fill: #4790F0;
+    background-color: transparent;
+  }
+  .ActionButton:hover
+  {
+    background-color: transparent; 
+    color: #4790F0;
+  }
+
+  .liked {
+    color: red;
+  }
+  
+
+
+
+  .slider-container {
+    width: 80%; 
+    margin: 0 auto; 
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: 10px; 
+    width: 100%;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px; 
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #bbb; /* Inactive dots */
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3e3e3e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 120px;
+  }
+  
+  .loading-text {
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  
+
+  .status-indicator2 {
+    position: absolute; 
+    width: 8px; 
+    height: 8px; 
+    background-color: #26e07f; 
+    border-radius: 50%; 
+    bottom: -6px; 
+    right: 0; 
+    border: 2px solid #fff; 
+    left:60px;
+    top: 65px;
+    margin-bottom: 10px;
+  }
+.faceai
+{
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+}

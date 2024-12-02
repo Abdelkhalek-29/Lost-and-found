@@ -1,0 +1,403 @@
+.dialogpost {
+  position: fixed;
+  top: 335px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.dialogpost-content {
+  max-width: 800px;
+  width: 700px;
+  height: 635px;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btnPost {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; 
+  display: flex;
+  align-items: center;
+
+}
+
+.btnPost:hover {
+  background-color: #52c472;
+}
+
+/* .form-group {
+  margin-bottom: 20px;
+  display: flex; 
+  align-items: center; 
+}
+
+.form-group label {
+  flex: 0 0 80px; 
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  flex: 0.9; 
+}
+
+.form-group select
+{
+  border-radius: 5px;
+  border: #ccc;
+  background-color: #ccc;
+  height: 30px;
+} */
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px; /* Add some space between label and input */
+}
+.form-group input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom:0px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+} 
+.form-group input,
+.form-group select {
+  width: 65%; 
+}
+.form-group select
+{
+  border-radius: 5px;
+  border: gray;
+  background-color: #F7F7F9;
+  padding-left: 8px;
+  width: 250px;
+  height: 43px;
+}
+
+.form-group input
+{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 8px;
+  background-color: #F7F7F9;
+}
+
+.postBtn{
+ display: flex;
+ align-items: center;
+ justify-content: end;
+}
+
+.buttonClose
+{
+  background-color: rgba(214, 41, 62, 0.1);
+  color: #D7293E;
+  border: none; 
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+  font-size: 15px;
+  font-weight: 600;
+
+}
+/*Next button*/
+.buttonNext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #0e22da;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 16px;
+  width: 100px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttonNext span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+font-size: 15px;
+}
+
+.buttonNext span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -15px;
+transition: 0.5s;
+}
+
+.buttonNext:hover span {
+padding-right: 15px;
+}
+
+.buttonNext:hover span:after {
+opacity: 1;
+right: 0;
+}
+/**/
+
+/*  .buttonPost
+{
+  border: none;
+  background-color: #E6F8F3;
+  color: #0CBC87;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+  font-size: 15px;
+  font-weight: 600;
+} 
+.buttonPost:hover
+{
+  background-color: #0CBC87;
+  color: #FFFFFF;
+}
+
+.buttonClose:hover
+{
+  background-color: #d6293e;
+  color: #FFFFFF;
+}*/
+
+
+
+/* Toggle btn */
+
+/* .lost-found-toggler {
+display: flex;
+align-items: center;
+} */
+.lost-found-toggler {
+display: flex;
+align-items: center;
+justify-content: space-between; /* Add this to push items to opposite ends */
+}
+
+.hidden {
+display: none;
+}
+.toggle {
+display: flex;
+align-items: center; 
+width: 40px;
+height: 25px; 
+background-color: hsl(0, 0%, 80%);
+border-radius: 1.7rem;
+cursor: pointer;
+transition: background-color 300ms 300ms;
+}
+
+.toggle__circle {
+width: 15px;
+height: 15px;
+background-color: hsl(0, 0%, 95%);
+border-radius: 50%;
+margin-left: 5px; 
+margin-right:5px ;
+transition: margin-left 500ms ease-in-out; 
+}
+/* .toggle {
+display: flex;
+align-items: center; 
+width: 40px;
+height: 25px; 
+background-color: hsl(0, 0%, 80%);
+border-radius: 1.7rem;
+cursor: pointer;
+transition: background-color 300ms 300ms;
+}
+
+.toggle__circle {
+width: 15px;
+height: 15px;
+background-color: hsl(0, 0%, 95%);
+border-radius: 50%;
+margin-left: 5px; 
+transition: margin-left 500ms ease-in-out; 
+} */
+
+/* .toggle-text {
+margin-left: 10px; 
+line-height: .8;
+}
+*/
+
+.toggle-text {
+margin-right: auto; /* Push the text to the left side */
+margin-left: 10px; /* Add margin to separate from the circle */
+font-size: 18px;
+}
+
+/* #check:checked + .toggle > .toggle__circle {
+margin-left: 20px; 
+}
+
+#check:checked + .toggle {
+background-color: #41a63c;
+}
+
+.toggle-text span {
+margin-bottom: 100px; 
+margin-right: 580px;
+} */
+#check:checked + .toggle > .toggle__circle {
+margin-left: auto; /* Push the circle to the right side */
+}
+
+#check:checked + .toggle {
+background-color: #41a63c;
+}
+
+.toggle-text span {
+margin-bottom: 100px; 
+}
+
+.divider-line
+{
+  border: 1px solid #007bff; /* Change to your desired color */
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+form .error-message {
+color: red;
+font-size: 12px;
+margin-top: 5px;
+margin-bottom: 0px;
+display: block;
+align-items: center;
+justify-content: center;
+}
+
+.dark .dialogpost 
+{
+  background-color: rgb(36,37,38); /* Dark background color */
+        color: #fff; /* Light text color for better contrast */
+        border-bottom:0.1px  solid rgb(94, 94, 94);
+        filter: drop-shadow(0 0 0.4rem gray); 
+}
+  
+.dark .form-group input[type="text"] 
+{
+  background-color: #3A3B3C;
+  border: 0.5px solid rgb(166, 163, 157);
+}
+
+.dark .form-group select
+{
+  background-color: #3A3B3C;
+  border: 0.5px solid rgb(166, 163, 157);
+}
+.dark ::placeholder
+{
+  color: gray;
+}
+
+
+.dark #HairStyle option,
+.dark #Gender option,
+.dark #Age option,
+.dark #HairColor option,
+.dark #SkinColor option,
+.dark #EyeColor option {
+  color: black; 
+  background-color: gainsboro;
+  
+}
+.dark #Address,
+.dark #Age,
+.dark #Fristname,
+.dark #Lastname
+{
+  background-color: #3A3B3C;
+  color: #fff;
+}
+
+
+
+
+.dark #Age:hover {
+  border:1px solid wheat;
+}
+
+
+.dark select {
+  color: white; 
+}
+
+.dark select option {
+  color: black; 
+  background-color: gainsboro; 
+}
+
+.dark select option:checked {
+  color: white;
+  background-color: black; 
+}
+
+
+.dark #Address:hover,
+.dark #Age:hover,
+.dark #Fristname:hover,
+.dark #Lastname:hover {
+  border:1.9px solid wheat;
+}
+
+.dark input[type="number"] {
+  color: dark; /* Change to the color you desire */
+}
+.dark .toggle__circle
+{
+  background-color: white;
+}
+
+.red-divider {
+  border-color: red;
+}
+
+.dark .toggle-text {
+  margin-right: auto; /* Push the text to the left side */
+  margin-left: 10px; /* Add margin to separate from the circle */
+  font-size: 18px;
+  color: rgb(250, 215, 152);
+  }

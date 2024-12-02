@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 70px;
+    left: 400px; 
+    filter: drop-shadow(0 0 0.3rem gray); 
+    z-index: 10;
+  }
+  
+  .post-card {
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+
+  }
+  
+  .post-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-input textarea {
+    flex-grow: 1;
+    margin-left: 10px;
+    border: none;
+    outline: none; 
+    resize: none; 
+    width: 400px; /* Set fixed width */
+    height: 29px; /* Set fixed height */
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 450; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+  
+  .post-actions {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;  
+    width: 100%; 
+    font-family: 'Inter', sans-serif; 
+  }
+  
+  .post-button {
+    display: flex;
+    align-items: center;
+    background-color: #4b53df; 
+    color: white;
+    font-weight: bold; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    justify-content: flex-end;
+    margin-left: 430px;
+  }
+  
+  .post-button:hover {
+    background-color: #0CBC87;
+    color: #FFFFFF;
+  }
+
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    padding-right:8px;
+    gap: 6px;
+    background-color: #EEF0F2;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #676A79;
+    font-size: 13px;
+  }
+  .button:hover
+  { 
+    color: #0C59BD;
+  }
+  
+
+  .button img
+  {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .button + .button {
+    margin-left: 10px;
+  }
+/*diaoge*/
+   .dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dialog-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dialog h2 {
+    margin-top: 0;
+  } 
+  
+ 
+  /* .custom-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    border: 2px dashed #4B5563;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+    margin-bottom: 24px;
+  } */
+  
+  .custom-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .custom-file-upload .icon svg {
+    height: 8cap; 
+    fill: #4B5563;
+  }
+  
+  .custom-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-file-upload .text span {
+    font-weight: 400;
+    color: #4B5563;
+  }
+  
+  .custom-file-upload input {
+    display: none;
+  }
+  
+  /*button in side diaoge*/
+  .buttonDialog
+  {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px;
+    
+  }
+  .buttonClose
+  {
+    background-color: rgba(214, 41, 62, 0.1);
+    color: #D7293E;
+    border: none; 
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+  }
+  .buttonPost
+  {
+    border: none;
+    background-color: #E6F8F3;
+    color: #0CBC87;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+  }
+
+  .buttonPost:hover
+  {
+    background-color: #0CBC87;
+    color: #FFFFFF;
+  }
+
+  .buttonClose:hover
+  {
+    background-color: #d6293e;
+    color: #FFFFFF;
+  }
+
+  
+  .dark .container
+  {
+    border-radius: 50%;
+  }
+  .dark .post-card 
+  {
+    background-color: #242526;
+  }
+  .dark  .post-card textarea
+{
+  background-color: #3A3B3C;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.dark  .post-input textarea::placeholder
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.dark .button
+{
+  background-color: #3A3B3C;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.dark .post-input img
+{
+  border: 2px solid whitesmoke;
+}

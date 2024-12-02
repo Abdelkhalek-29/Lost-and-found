@@ -1,0 +1,29 @@
+.boxtest1 {
+    border: 1 solid black;
+    width: 500px;
+    height: 400px;
+    background-color: aliceblue;
+  }
+  
+  /* Styles for TextH and ParagraphTest */
+  .TextH1 {
+    color: black; /* Default color */
+  }
+  
+  .ParagraphTest1 {
+    color: black; /* Default color */
+  }
+  
+  .dark /* .boxtest1 */ { /* Uncommented to target boxtest1 */
+    background-color: #242526;
+  }
+  
+  .dark .TextH1 {
+    color: white; /* White text color in dark mode */
+  }
+  
+  .dark .ParagraphTest1 {
+    color: white; /* White text color in dark mode */
+  }
+  
+ 

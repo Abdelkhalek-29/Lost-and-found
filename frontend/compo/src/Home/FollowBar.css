@@ -1,0 +1,121 @@
+.follow-box {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1px solid;
+    margin-left: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 1100px;
+    margin-left: 50px;
+    top:70px;
+    filter: drop-shadow(0 0 0.3rem gray); 
+  }
+  
+  .follow-box h2 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #141949;
+    font-size: 20px;
+    cursor: pointer;
+
+  }
+  
+  .follow-item {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+  }
+  
+  .follow-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+
+  }
+  
+  .follow-item .name {
+    flex-grow: 1;
+    font-size: 16px;
+  }
+  
+  .add-icon {
+    background-color: #E7F0FD;
+    color: #117df1;
+    border: none;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+
+  .viewmore {
+    margin-top: auto; 
+    text-align: center; 
+    justify-content: center;
+    margin-left: 75px;
+}
+
+.Morefollow {
+    background-color: #E7F0FD;
+    color: #117df1;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+    
+}
+
+.Morefollow:hover {
+    background-color: #0F6FEC; 
+    color: #fff; 
+}
+.add-icon:hover
+{
+    background-color: #0F6FEC;
+    color: #fff; 
+}
+
+.dark  .follow-box h2
+{
+  color: wheat;
+}
+
+.dark .follow-item .name {
+  color: white;
+}
+
+.dark .Morefollow {
+ color: #0f6fec;
+  background-color: rgba(15, 111, 236, 0.1);
+}
+
+.dark .Morefollow:hover {
+  /* background-color: black; 
+  color: wheat;  */
+  background-color: #0F6FEC; 
+  color: #fff; 
+}

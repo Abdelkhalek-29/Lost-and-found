@@ -1,0 +1,194 @@
+/* .curtain {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: #000;
+    z-index: 1000;
+    animation: openCurtains 3s forwards; 
+  }
+  
+  .left-curtain {
+    left: 0;
+  }
+  
+  .right-curtain {
+    right: 0;
+  }
+  
+  @keyframes openCurtains {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .right-curtain {
+    animation: openRightCurtain 3s forwards; 
+  }
+  
+  @keyframes openRightCurtain {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  } */
+  .slide-up {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: #191919;
+    z-index: 1000;
+    animation: slideUp 5s forwards; /* Adjust the duration as needed */
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+/* .aimatching
+{
+    background-color: #242526;
+    height: 100%;
+} */
+.PostBoxai {
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    background-color: #242526;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 650px;
+    display: inline-block; /* Display as inline-block to make them appear in a row */
+    margin-top: 50px;
+    margin-right: 24px;
+    filter: drop-shadow(0 0 0.5rem gray);
+    animation: clearBlur 15s ease-in-out forwards; /* Animate to remove blur */
+
+}
+@keyframes clearBlur {
+    0% {
+      filter: blur(5px);
+    }
+    100% {
+      filter: blur(0);
+    }
+  }
+.PostHeaderai {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .status-indicator2ai
+  {
+    position: absolute; 
+    width: 8px; 
+    height: 8px; 
+    background-color: #26e07f; 
+    border-radius: 50%; 
+    bottom: -6px; 
+    right: 0; 
+    border: 1px solid #fff; 
+    left:80px;
+    top: 185px;
+    margin-bottom: 10px;
+  }
+   
+  .BtnExitAi 
+  {
+     width:30px;
+     height: 30px;
+     position: relative;
+     margin-top: 25px;
+     color: wheat;
+     background-color: #FF6969;
+     border: none;
+     border-radius: 5px;
+     font-size: 15px;
+     font-weight: 800;
+     left: 265px;
+     margin-left: -610px;
+  }
+  .BtnExitAi:hover
+  {
+    color: #fff;
+    background-color: #e33a3a;
+
+  }
+
+
+  .whichPost
+  {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: wheat;
+    padding: 10px;
+  }
+  .whichPostME
+  {
+    border: 1px solid wheat;
+    padding: 6px 25px;
+    animation: squeeze 12s both;
+    margin-right: 5px;
+  }
+  .whichPostYour
+  {
+    border: 1px solid wheat;
+    padding: 6px 25px;
+    margin-left: -10px;
+    animation: squeeze 12s both;
+
+  }
+
+  @keyframes squeeze {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+ 
+ 

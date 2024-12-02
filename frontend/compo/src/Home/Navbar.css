@@ -1,0 +1,443 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    border: 2px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.left 
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+    span {
+      font-weight: 600;
+      font-size: 20px;     
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px ;
+        border-radius: 5px;
+        padding: 5px;
+        width: 50%; 
+        position: relative;
+        
+    }
+
+   
+
+        input {
+            height: 40px;
+            line-height: 28px;
+            padding: 0 1rem;
+            padding-left: 2.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+            background-color: #e1e4e6;
+            color: #0d0c22;
+            transition: .3s ease;
+        }
+        
+
+        
+        .input::placeholder {
+            color: #9e9ea7;
+           }
+        
+           .input:focus, input:hover {
+            outline: none;
+            border-color: #0f6fec;
+            background-color: #fff;
+            
+           }
+        
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 10px;
+          }    
+
+
+          .search-icon {
+            position: absolute;
+           left: 0.9rem;
+           fill: #9e9ea7;
+           width: rem;
+           height: 1rem;
+          }
+    
+         
+          .notif.email-icon {
+            color: #686B7A; /* Change the color of the email icon to blue */
+            border: none; /* Add a 1px solid blue border */
+            border-radius: 10%;
+           
+            width: 30px;
+         
+        }
+        .notif.message-icon {
+            color: #686B7A; /* Change the color of the email icon to blue */
+            border: none; /* Add a 1px solid blue border */
+            padding-top: 2px;
+            width: 30px;
+          
+
+        }
+        .notif.notifications-icon {
+            color: #686B7A; 
+            border: none; 
+            border-radius: 10%;
+            width: 30px;
+          
+        }
+
+        .notif
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            margin: 2px;
+            background-color: #EEF0F2;
+            border-radius: 10%;
+        }
+
+        .notif:hover
+        {
+            color:black;
+        }
+        
+   
+
+    /*menu*/
+    .user {
+        position: relative;
+        display: inline-block;
+        margin-top: 8px;
+      }
+      
+      .menu {
+        position: absolute;
+        top: calc(100% + 5px); /* Position it below the image */
+        left: -180px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        width: 230px; /* Adjust width as needed */
+        height: 270px;
+        z-index: 2000; /* Ensure it's above other content */
+        overflow: hidden;
+        /* padding: 10px; */
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .menu ul li {
+        cursor: pointer;
+        padding: 12px 8px;
+       
+      }
+      
+      .menu ul li:hover {
+        background-color: #f0f0f0;
+      }
+      .btnViewC
+      {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .btnView
+      {
+       
+        margin-bottom: 7px;
+        color: #0f6fec;
+        background-color: rgba(15, 111, 236, 0.1);
+        opacity: 5;
+        border:none;
+        padding: 5px;
+        border-radius: 2px;
+        padding-left:8px ;
+        padding-right:8px ;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 150px;
+        height: 35px;
+      }
+
+      .menu svg {
+        vertical-align: middle; 
+        margin-right: 6px; 
+        margin-bottom: 3px;
+      } 
+
+      .btnView:hover
+      {
+        background-color: #0079FF;
+        color: #EEF0F2;
+        
+      }
+
+      .menu-item11 
+      {
+        /* padding: 10px; */
+        align-items: center;
+        text-align: start;
+        border-top: 1px solid gray; 
+        border-bottom: 1px solid gray;        
+        margin-top:1px ;
+      }
+      .dark .menu-item11:hover
+      {
+        color: #0079FF !important;
+        
+
+      }
+     
+/* 
+      .dark .menu-item11:hover p
+      {
+        color: #0f6fec;
+        transition: 0.30.3s ease-in-out;;
+      } */
+
+      .menu-item::before {
+        content: "";
+        display: block;
+        border-top: 2px solid #ccc; 
+        flex-grow: 1;
+        margin: 0 8px; 
+        margin-bottom: 5px;
+      }
+
+      .link-style {
+        text-decoration: none;
+        color: inherit;
+      }
+
+
+      .status-indicator1 {
+        position: absolute; 
+        width: 8px; 
+        height: 8px; 
+        background-color: #26e07f; 
+        border-radius: 50%; 
+        bottom: -6px; 
+        right: 0; 
+        border: 2px solid #fff; 
+        left:12px;
+        margin-bottom: 10px;
+      }
+      .status-indicator1 .offline1 {
+        background-color: red; 
+      }
+/* Dark */
+      .dark .navbar {
+        background-color: rgb(36,37,38); /* Dark background color */
+        color: #fff; /* Light text color for better contrast */
+        border-bottom:0.1px  solid rgb(94, 94, 94);
+        filter: drop-shadow(0 0 0.4rem gray); 
+      }
+
+      
+
+      .dark .input
+      {
+        background-color: #3A3B3C;
+      }
+      
+
+      .dark .notif.notifications-icon  {
+        color: wheat;  
+        background-color: #3A3B3C;
+      }
+
+      .dark .email-icon 
+      {
+        color: wheat; 
+        background-color: #3A3B3C;
+      }
+
+      .dark .message-icon 
+      {
+        color: wheat; 
+        background-color: #3A3B3C;
+      }
+
+      .dark .card-Notifcation
+      {
+        background-color: rgb(36,37,38);
+      }
+      .dark .card-Notifcation span
+      {
+        background-color: whitesmoke;
+      }
+
+      .dark .list-item
+      {
+        background-color: #3A3B3C;
+      }
+
+      .dark .menu
+      {
+        background-color:#171717 ;
+        border: 1px solid;
+      }
+
+       .dark .menu ul li:hover
+      {
+        background-color: #272727;
+        color: #0079FF;
+        
+      }
+   
+      .dark .user img
+      {
+        border: 2px solid wheat;
+      }
+
+      .dark h4 span {
+        color: white !important; 
+      }
+      
+      .dark h4 span span {
+        color: orange !important; 
+      }
+
+      .UserInfoMenu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Align items from the start */
+        flex-direction: row;
+        padding: 8px;
+      }
+      .UserInfoMenu img
+      {
+         margin-left: 0px;
+         margin-right: 8px;
+      }
+
+      .BtnMode
+      {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 5px;
+        
+      }
+
+      .BtnLight
+      {
+         height: 35px;
+         border-radius: 6px;
+         border: 1px solid white;
+         margin-right: 6px;
+      }
+      .BtnLight svg {
+        width: 16px;
+        height: 16px;
+        fill: #0f6fec; 
+        margin-right: 5px; 
+        margin-top: 5px;
+        margin-left: 4.5px;
+      }
+      
+      .BtnDark
+      {
+         height: 35px;
+         border-radius: 6px;
+         border: 1px solid white;
+
+      }
+      .BtnDark svg
+      {
+        width: 16px;
+        height: 16px;
+        fill: #0f6fec; 
+        margin-right: 5px; 
+        margin-top: 5px;
+        margin-left: 4.5px;
+      }
+      .BtnMode .BtnLight   {
+        background-color: #0f6fec; /* Default background color */
+        
+      }
+      .BtnLight svg
+        {
+      fill: white;
+       }
+      
+      .dark .BtnMode .BtnDark {
+        background-color: #0f6fec; 
+        color: white;
+      }
+      .dark .BtnDark svg
+      {
+        fill: wheat;
+      }
+
+      .dark .BtnLight
+      {
+        background-color: #3A3B3C;
+        color: #0079FF;
+        border: none;
+      }
+
+
+      .BtnMode p
+      {
+        margin-left: 12px;
+        margin-right: 5px;
+        color: #686B7A;
+      }
+
+      .SOut 
+      {
+         background-color: transparent;
+         border: none;
+         font-size: 15px;
+         font-weight: 550;
+         padding-left: 0px;
+      }
+
+      .dark .SOut
+      {
+        color:wheat;
+      }

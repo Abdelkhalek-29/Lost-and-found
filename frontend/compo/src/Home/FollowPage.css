@@ -1,0 +1,160 @@
+.follow-page {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .FollowPageBack {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    border-radius: 0;
+  }
+
+/*   .follow-boxs
+  {
+    border: none ;
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    width: 550px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--bg-color);
+    margin-left: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-left: 50px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 0 5px 1px #888888;
+    padding-right: 8px;
+  } */
+
+  .follow-boxs {
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    width: 550px;
+    max-height: 650px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1px solid none;
+    margin-left: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    overflow-x: hidden;
+    padding-right: 8px;
+    box-shadow: 0 0 5px 2px #afaeae;
+  }
+
+  .followPage-itemPage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+ .followPage-itemPage {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .followPage-itemPage .name {
+    flex-grow: 1;
+    font-size: 22px;
+    cursor: pointer;
+
+  }
+
+  
+  .addFollowPage-iconaddFollowPage {
+    background-color: #E7F0FD;
+    color: #117df1;
+    border: none;
+    border-radius: 50%;
+    height: 2.8rem;
+    width: 2.8rem;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .follow-boxs h2 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    color: #141949;
+    font-size: 25px;
+    cursor: pointer;
+
+  }
+  
+  .addFollowPage-iconaddFollowPage:hover {
+    background-color: #0F6FEC; 
+    color: #fff; 
+}
+
+.addFollowPage-iconaddFollowPage.clicked {
+    background-color: #0F6FEC; 
+    color: #fff; 
+  }
+
+  
+ 
+  input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+
+ 
+  
+  .follow-boxs:hover {
+    overflow-y: auto; 
+  }
+  
+  .follow-boxs::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .follow-boxs::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .follow-boxs::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .follow-boxs::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }

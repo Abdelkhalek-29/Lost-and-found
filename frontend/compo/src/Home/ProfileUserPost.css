@@ -1,0 +1,260 @@
+.cardProfile1{
+    --main-color: #000;
+    --submain-color: #78858F;
+    --bg-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    width: 1200px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1px solid;
+    margin-left: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: sticky;
+    margin-left: 130px;
+  }
+ 
+  .card__imgProfile1 {
+    height: 300px;
+    width: 100%;
+  }
+  
+  .card__imgProfile1 .Cover1{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0px ;
+  }
+  
+
+
+.card__avatarProfile1 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 230px;
+    left: 20px; /* Adjust the left position to move it to the left side */
+  }
+  
+  .card__avatarProfile1 img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 1px;
+  }
+  
+  
+  .card__titleProfile1 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 23px;
+    color: var(--main-color);
+    top: 300px;
+    left: 190px;
+  }
+  
+  .card__subtitleProfile1 {
+    position: absolute;
+    top: 340px;
+    left: 190px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--submain-color);
+  }
+  
+  .card__btnProfile1 {
+    position: absolute;
+    top: 310px;
+    left: 990px;
+    margin-top: 8px;
+    width: 110px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(71,144,240);;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
+ .aboutProfile1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Item1,
+  .Itemb1,
+  .Itemc1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .Item1 svg,
+  .Itemb1 svg,
+  .Itemc1 svg {
+    margin-right: 8px;
+  }
+
+.Item1
+{
+    position: absolute;
+    top: 420px;
+    left: 20px;
+}
+
+.Itemb1 {
+    position: absolute;
+    top: 460px;
+    left: 20px;
+  }
+  .Itemc1 {
+    position: absolute;
+    top: 490px;
+    left: 20px;
+    margin-top: 3px;
+  }
+  
+
+  
+  .Item1 span,
+  .Itemb1 span,
+  .Itemc1 span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .Itemc1 span 
+  {
+    font-size: 15px;
+    margin-left: 4px; 
+  }
+
+  .PostUser
+  {
+    margin-top: 250px;
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; 
+    margin-top: 300px;
+  }
+  
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333; 
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .status-indicator {
+    position: absolute; 
+    width: 15px; 
+    height: 15px; 
+    background-color: #26e07f; 
+    border-radius: 50%; 
+    bottom: 0; 
+    right: 0; 
+    border: 2px solid #fff; 
+    left:120px;
+    margin-bottom: 10px;
+  }
+  .status-indicator.offline {
+    background-color: red; 
+  }
+
+  .card__avatarProfile1 img:hover {
+    transform: scale(1.1); 
+    filter: grayscale(100%); 
+  }
+  
+  .card__imgProfile1 .Cover1:hover {
+    transform: scale(0.999);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    filter: grayscale(100%); 
+  }
+
+/* Dark */
+  .dark .cardProfile1
+{
+  background-color: rgb(28, 30, 33)
+  ;
+}
+
+.dark .card__titleProfile1
+{
+  color: white;
+  margin-top: 12px;
+}
+
+
+.dark .card__subtitleProfile1 {
+  color: white;
+  margin-top: 2px;
+}
+
+
+.dark .card__btnProfile1
+{
+  background-color: 	#e4e6eb;
+}
+
+
+.dark .card__btnProfile1:hover
+{
+  background-color:#b0b3b8
+  ;
+}
+
+.dark .Item1 svg,
+.dark .Itemb1 svg,
+.dark .Itemc1 svg {
+  color: #fff; 
+}
+.dark .aboutProfile1 {
+  color: #fff; 
+}
+
+.dark .cardProfile1 {
+  border: 2px solid wheat !important;
+}
+
+.dark body {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color for better contrast */
+}
+
+.dark .loading-spinner
+{
+  border-left-color:white 
+}

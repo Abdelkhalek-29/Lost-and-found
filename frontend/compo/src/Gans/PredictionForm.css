@@ -1,0 +1,55 @@
+.prediction-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.prediction-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prediction-form input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.prediction-form img {
+  margin-bottom: 10px;
+}
+
+.prediction-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prediction-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.prediction-form button:hover:enabled {
+  background-color: #0056b3;
+}
+
+.loading {
+  margin-top: 10px;
+  font-size: 26px;
+  color: red;
+}
+
+.response-gif {
+  margin-top: 20px;
+}
+.response-gif img {
+   width: 700px;
+   height: 700px;;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/archia');
+
+.VideoMockups
+{
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+/*     background-color: #F8F4F1;
+ */}
+.VideoMockupsContant h3 
+{
+    color: black;
+    margin-left: 540px;
+    margin-top: -550px;
+    font-family: "Archia", sans-serif;
+
+}
+.VideoMockupsContant p
+{
+    color: black;
+    font-size: 20px;
+    text-align: start;
+    margin-left:780px;
+    font-family: "Archia", sans-serif;
+    line-height: 1.5;
+}
+
+
+.dividervideocard1 {
+    position: relative;
+    width: 1px;
+    height: 200px; 
+    background-color: #1E1E2F;
+    margin: 0 20px; 
+    top: -380px;
+    margin-left: 650px;
+  }
+
+  .VideoMockupsplayer
+{
+ position: relative;
+  width: 600px;
+  top: 20px;
+  
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }

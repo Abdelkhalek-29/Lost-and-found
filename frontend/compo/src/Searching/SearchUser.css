@@ -1,0 +1,319 @@
+.SearchContainerUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .SearchInputContainerUser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+  }
+  
+  
+  
+  .SearchButtonUser {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .SearchButtonUser:hover {
+    background-color: #0056b3;
+  }
+  
+  .SearchButtonUser:focus {
+    outline: none;
+  }
+  
+   
+  .SearchInputUser{
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #e1e4e6;
+    color: #0d0c22;
+    transition: 0.3s ease;
+    margin-top: 20px; 
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .SearchInputUser::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .SearchInputUser:focus,
+  .SearchInputUser:hover {
+    outline: none;
+    border-color: #0f6fec;
+    background-color: #fff;
+  }
+  
+  .search-icon1 {
+    position: relative;
+    left: 40px;
+    fill: #9e9ea7;
+    width: 1rem;
+     margin-top: 8px;
+}
+  
+
+.PostBox1 {
+    position: relative;
+    top: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 270px;
+    width: 650px;
+    height: auto;
+    margin-top: -220px; 
+  }
+   
+
+ 
+   .PostHeader1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .UserInfo1 { 
+    margin-left: 10px;
+  }
+  
+ 
+  .UserName1 {
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 10px;
+    width: 200px;
+  }
+  
+  
+  .PostTime1 {
+    padding: 0px;
+    font-size: 12px;
+    color: #666;
+    
+
+  }
+  
+  /* PostContent styles */
+  .PostContent1 {
+    margin-bottom: 10px;
+   
+  }
+  
+  
+  .PostText1 {
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif; 
+    font-size: 14px;
+    text-align: start;
+  }
+  
+
+  
+  
+  .postImg1
+  {
+    height: 450px;
+    width: 600px;
+    border-radius: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+  }
+  .Divider1 {
+    margin: 10px 0; 
+    margin-top: 25px;
+    border: 0;
+    border-top: 1px solid #ccc; 
+  }
+  
+
+
+  .Highlighted {
+    background-color: yellow; /* Highlight background color */
+    font-weight: bold; /* Bold font for highlighted text */
+    color: black; /* Text color for highlighted text */
+  }
+  .LoadingContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #4c4d4e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.ErrorMessage1
+{
+  border: 5px solid red;
+  z-index: 10000;
+  font-size: 20px ;
+  padding: 10px;
+  font-weight: 500;
+  color: red;
+  margin-bottom: 10px;
+}
+.NoResultsMessage
+{
+    font-size: 18px;
+}
+
+.dark .SearchInputContainerUser
+{
+  background-color: #3A3B3C;
+
+}
+
+.dark .SearchInputUser{
+   background-color: rgb(214, 214, 214);
+   border: 3px solid white;
+}
+
+.dark .SearchInputUser::placeholder{
+  color: rgb(49, 49, 49);
+}
+
+.dark .SearchInputUser:hover{
+  border: 4px solid rgb(255, 216, 144); 
+}
+
+.dark .SearchButtonUser
+{
+  background-color: rgb(246, 195, 101);
+  color: #0d0c22;
+}
+
+
+.dark .SearchButtonUser:hover
+{
+  background-color: rgb(255, 242, 218);
+  color: #0f0f0f;
+}
+
+.dark .UserName
+{
+  color: wheat;
+}
+.dark .PostTime
+ {
+  color: wheat;
+ }
+  .dark .PostText1
+  {
+    color: white;
+  }
+
+
+
+  .slick-prev::before
+  {
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+   
+  }
+  .slick-prev
+  {
+    left: -5px;
+    height:10px ;
+  }
+  
+
+  
+  .slick-arrow::before {
+    width: 20px;
+    height: 17.5px; /* Change the color to your desired color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    width: 10px;
+    height: 14.5px;
+  }
+
+  .slick-next:before{
+    border-radius:100%;
+  }
+  .slick-next
+  {
+    right: -15px;
+    height:10px ;
+
+  }
+ 
+  
+ 
+  .dark .slick-prev
+  {
+    left: -5px;
+    width: 25px;
+  }
+
+  .dark .slick-next
+  {
+    right: -13px;
+    
+  }
+
+  .dark .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+  }
+
+  .dark .slick-dots li.slick-active  button::after {
+    opacity: .75;
+    color: gold;
+  }
+
+  .dark .menu__icon span
+  {
+     background-color: white;
+  }
+  .dark .PostBox1
+  {
+    background-color: #242526;
+
+  }
+
+  .dark .avatar11
+  {
+    border: 2px solid whitesmoke;
+  }
+
+  .dark .PostBox1 {
+    box-shadow: 0px 0px 20px 0px #888888; /* Example with offsets and blur radius */
+  }
+  

@@ -1,0 +1,521 @@
+@import url('https://fonts.cdnfonts.com/css/archia');
+.splash {
+    background-color: #191919;
+    font-family: "Archia", sans-serif;
+  }
+  
+  .text {
+    opacity: 0;
+    position: absolute;
+    z-index: 7;
+    text-align: center; /* Center text horizontally */
+    width: 800px;
+    height: 100px;
+    top: 40%;
+    left: 50%;
+    font-size: 58px;
+    font-weight: 700;
+    transform: translate(-50%, -50%); /* Center element */
+    -webkit-animation: on .6s ease-in-out 13.7s forwards; /* Adjusted animation delay */
+    -moz-animation: on .6s ease-in-out 13.7s forwards;
+    -o-animation: on .6s ease-in-out 13.7s forwards;
+    animation: on .6s ease-in-out 13.7s forwards;
+    text-transform: uppercase;
+
+  }
+  
+  .text p {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-animation: type 1.15s steps(60, end) 13.7s; /* Adjusted animation delay */
+    -moz-animation: type 1.15s steps(60, end) 13.7s;
+    -o-animation: type 1.15s steps(60, end) 13.7s;
+    animation: type 1.15s steps(60, end) 13.7s;
+    color: #1A2130;
+  }
+  
+  .text p:nth-child(2) {
+    -webkit-animation: type2 .5s steps(60, end) 13.7s; /* Adjusted animation delay */
+    -moz-animation: type2 .5s steps(60, end) 13.7s;
+    -o-animation: type2 .5s steps(60, end) 13.7s;
+    animation: type2 .5s steps(60, end) 13.7s;
+    margin-top: 10px;
+  }
+  
+  .text button {
+    border: 0;
+    opacity: 0;
+    background: #1A2130;
+    color: #FFA62F;
+    border: 1px solid #1A2130;
+    letter-spacing: 2px;
+    padding: 0.5rem 2.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: color 0.5s, background-color 0.5s;
+    -moz-transition: color 0.5s, background-color 0.5s;
+    -ms-transition: color 0.5s, background-color 0.5s;
+    -o-transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s;
+    -webkit-animation: on 2s ease-in-out 14s forwards; 
+    -moz-animation: on 2s ease-in-out 14s forwards;
+    -o-animation: on 2s ease-in-out 14s forwards;
+    animation: on 2s ease-in-out 14s forwards;
+  }
+  
+  
+  .text button:hover {
+    background: #FFA62F;
+    color: #191919;
+    border: 1px solid #191919;
+  }
+  
+  .splash {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .logotext {
+    font-size: 47px;
+  }
+  
+  .splash_logo {
+    position: absolute;
+    margin: -15px 0 0 -25px;
+    top: 45vh;
+    z-index: 5;
+    left: 50vw;
+    width: 50px;
+    text-align: center;
+    height: 60px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    opacity: 1;
+    will-change: opacity;
+    -webkit-animation: logo .3s ease-in 11.5s forwards, off .6s ease-in-out 13.2s forwards; /* Adjusted animation delay */
+    -moz-animation: logo .3s ease-in 11.5s forwards, off .6s ease-in-out 13.2s forwards;
+    -o-animation: logo .3s ease-in 11.5s forwards, off .6s ease-in-out 13.2s forwards;
+    animation: logo .3s ease-in 11.5s forwards, off .6s ease-in-out 13.2s forwards;
+  }
+  
+  .splash_logo:before {
+    display: block;
+    position: absolute;
+    left: 10px;
+    bottom: -7px;
+    width: 50px;
+    height: 1.5px;
+    background-color: #757474;
+    content: "";
+    margin-bottom: -10px;
+  }
+  
+  .splash_logo:after {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -15px;
+    width: 50px;
+    height: 1.5px;
+    background-color: #757474;
+    content: "";
+    will-change: width;
+  }
+  
+  .splash_svg {
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .splash_svg svg {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  
+  .splash_svg svg rect {
+    width: 100%;
+    height: 100%;
+    fill: #FFA62F;
+    stroke: 0;
+ /*    -webkit-clip-path: polygon(30vw 20vh, 70vw 20vh, 70vw 80vh, 30vw 80vh);
+    clip-path: polygon(30vw 20vh, 70vw 20vh, 70vw 80vh, 30vw 80vh); */
+    -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    -webkit-animation: expand .7s ease-in forwards 12.7s; 
+    -moz-animation: expand .7s ease-in forwards 12.7s;
+    -o-animation: expand .7s ease-in forwards 12.7s;
+    animation: expand .7s ease-in forwards 12.7s;
+  }
+  
+  .splash_minimize {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+  
+  .splash_minimize svg {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  
+  .splash_minimize svg rect {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+    clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+    -webkit-animation: scale .2s ease-out forwards 11s, hide 1.3s ease-out forwards 11.2s; /* Adjusted animation delay */
+    -moz-animation: scale .2s ease-out forwards 11s, hide 1.3s ease-out forwards 11.2s;
+    -o-animation: scale .2s ease-out forwards 11s, hide 1.3s ease-out forwards 11.2s;
+    animation: scale .2s ease-out forwards 11s, hide 1.3s ease-out forwards 11.2s;
+  }
+  
+  @-webkit-keyframes scale {
+    100% {
+      -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    }
+  }
+  @-moz-keyframes scale {
+    100% {
+      -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    }
+  }
+  @-o-keyframes scale {
+    100% {
+      -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    }
+  }
+  @keyframes scale {
+    100% {
+      -webkit-clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(45vw 40vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+    }
+  }
+  
+  @-webkit-keyframes hide {
+    100% {
+      fill: transparent;
+    }
+  }
+  @-moz-keyframes hide {
+    100% {
+      fill: transparent;
+    }
+  }
+  @-o-keyframes hide {
+    100% {
+      fill: transparent;
+    }
+  }
+  @keyframes hide {
+    100% {
+      fill: transparent;
+    }
+  }
+  @-webkit-keyframes off {
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes off {
+    100% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes off {
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes off {
+    100% {
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes on {
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes on {
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes on {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes on {
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes logo {
+    100% {
+      color: #292929;
+    }
+  }
+  @-moz-keyframes logo {
+    100% {
+      color: #292929;
+    }
+  }
+  @-o-keyframes logo {
+    100% {
+      color: #292929;
+    }
+  }
+  @keyframes logo {
+    100% {
+      color: #292929;
+    }
+  }
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+  }
+  @-moz-keyframes type {
+    0% {
+      width: 0;
+    }
+  }
+  @-o-keyframes type {
+    0% {
+      width: 0;
+    }
+  }
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+  }
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100;
+    }
+  }
+  @-moz-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100;
+    }
+  }
+  @-o-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100;
+    }
+  }
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 100;
+    }
+  }
+  @-webkit-keyframes expand {
+    25% {
+      -webkit-clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 58vh, 45vw 58vh);
+      clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      fill: white;
+    }
+    50% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      fill: #FFA62F;
+       /* fill: #f5d300; */
+      
+    }
+    75% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      fill: white;
+    }
+    100% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      fill: #FFA62F;
+    }
+  }
+  @-moz-keyframes expand {
+    25% {
+      -webkit-clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 58vh, 45vw 58vh);
+      clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      fill: white;
+    }
+    50% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      fill: #FFA62F;
+    }
+    75% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      fill: white;
+    }
+    100% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      fill: #FFA62F;
+    }
+  }
+  @-o-keyframes expand {
+    25% {
+      -webkit-clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 58vh, 45vw 58vh);
+      clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      fill: white;
+    }
+    50% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      fill: #FFA62F;
+      
+    }
+    75% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      fill: white;
+    }
+    100% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      fill: #FFA62F;
+     
+    }
+  }
+  @keyframes expand {
+    
+    25% {
+      -webkit-clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 58vh, 45vw 58vh);
+      clip-path: polygon(0vw 0vh, 55vw 40vh, 55vw 60vh, 45vw 60vh);
+      fill: white;
+    }
+    50% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 45vw 60vh);
+      fill: #FFA62F;
+      
+    }
+    75% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 55vw 60vh, 0vw 100vh);
+      fill: white;
+    }
+    100% {
+      -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+      fill: #FFC96F;
+    }
+  }
+  
+  .logotext {
+    animation: flash 0.8s infinite alternate; 
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-size: 18px;
+    letter-spacing:1.5px;
+    font-family: "Archia", sans-serif;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  
+  .popup-content button {
+    margin: 10px;
+    border: none;
+    width: 65px;
+    height: 25px;
+  }
+  
+  .Okbtn{
+   background-color: #1aa06d;
+   color: white;
+}
+.Exitbtn:hover
+{
+    background-color: #EF665B;
+    color: white;   
+}
+  .popup-content img.hourglass {
+    width: 100px; 
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  
+  
